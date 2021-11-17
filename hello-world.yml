@@ -8,7 +8,7 @@ jobs:
 - name: hello-world-job
   plan:
   - get: repo
-    trigger: true   # tell Concourse to trigger this job when new versions are emitted
+    trigger: true   # tell Concourse to trigger this job when new versions are emitted test
   - task: hello-world-task
     config:
       platform: linux
